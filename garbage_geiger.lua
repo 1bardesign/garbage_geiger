@@ -119,7 +119,7 @@ function geiger:update(dt)
 				self.pers = math.floor(self.per * self.samples_per_second)
 				self.hpers = math.floor(self.pers * 0.5)
 				self.active = 1
-				self.hpers_offset = self:random(0, hpers)
+				self.hpers_offset = self:random(0, self.hpers)
 			end
 
 			--render pulse
